@@ -1,0 +1,526 @@
+@import "normalize.scss";
+@import "media.scss";
+@import "base.scss";
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap&subset=cyrillic');
+
+.header {
+    background-color: #7f7f7f;
+    background: url('../img/header-bg.jpg');
+    padding-top: 10px;
+    padding-bottom: 52px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    &__btn {
+        display: inline-block;
+        font-size: 12px;
+        float: right;
+        margin-top: 7px;
+        @include phones {
+            border: unset;
+            background-color: #ffffff;
+            color: #000000;
+            font-size: 10px;
+        }
+    }
+    &__title {
+        margin-top: 25px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        color: #ffffff;
+        line-height: 28px;
+        &-2 {
+            display: inline-block;
+        }
+        &-3 {
+            display: inline-block;
+        }
+    }
+}
+
+.logo {
+    display: inline-block;
+    &-img {
+        width: 150px;
+        height: 50px;
+    }
+}
+
+.hello {
+    margin-top: 20px;
+    &__container {
+        width: 100%;
+        &-gallery {
+            margin-top: 20px;
+        }
+    }
+    &__welcome {
+        margin-left: 20px;
+        &-photo {
+            display: inline-block;
+            margin-right: 20px;
+            vertical-align: top;
+        }
+        &-img {
+            width: 125px;
+            height: 166px;
+        }
+
+        &-desc {
+            display: inline-block;
+            width: 74%;
+            @include phones {
+                width: 57%;
+            }
+        }
+
+        &-title {
+            &-text {
+                display: inline-block;
+                margin-right: 7px;
+                font-family: 'Roboto', sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 21px;
+                @include phones {
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
+            &-separator {
+                display: inline-block;
+                width: 262px;
+                border-top: 2px solid #000000;
+                vertical-align: middle;
+                @include phones {
+                    width: 72px;
+                }
+            }
+        }
+
+        &-text {
+            margin-top: 16px;
+            padding-right: 20px;
+            p {
+                font-family: 'Roboto', sans-serif;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 14px;
+                text-align: justify;
+                color: #7B7B7B;
+                @include phones {
+                    font-size: 9px;
+                    line-height: 10px;
+                }
+            }
+            strong {
+                font-weight: 700;
+                color: #000000;
+            }
+        }
+    }
+    &__gallery {
+        &-pic {
+            width: 100%;
+        }
+    }
+}
+
+.services {
+    &__container {
+        @include phones {
+            padding-bottom: 32px;
+        }
+    }
+    &__title {
+        text-align: center;
+        margin-bottom: 48px;
+        @include phones {
+            margin-bottom: 26px;
+        }
+        &__separator {
+            display: inline-block;
+            width: 98px;
+            border-top: 2px solid #000000;
+            vertical-align: middle;
+            @include phones {
+                width: 86px;
+            }
+        }
+        &-text {
+            display: inline-block;
+            margin-left: 10px;
+            margin-right: 10px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 18px;
+            text-transform: uppercase;
+            color: #000000;
+            @include phones {
+                font-size: 14px;
+                line-height: 16px;
+                margin-left: 25px;
+                margin-right: 25px;
+            }
+        }
+    }
+
+    &__icons {
+        text-align: center;
+        &__item {
+            display: inline-block;
+            margin-bottom: 46px;
+            @include phones {
+                margin-bottom: 28px;
+                vertical-align: top;
+            }
+            &-01, &-03, &-05 {
+                margin-right: 10px;
+                @include phones {
+                    margin-right: 13px;
+                }
+            }
+        }
+
+        &__img {
+            width: 60px;
+            height: 58px;
+            margin-right: 5px;
+            @include phones {
+                width: 43px;
+                height: 42px;
+                margin-right: unset;
+            }
+        }
+
+        &__text {
+            width: 203px;
+            display: inline-block;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 13px;
+            color: #000000;
+            vertical-align: top;
+            text-align: left;
+            margin-top: 5px;
+            &-5 {
+                margin-top: 12px;
+            }
+            @include phones {
+                display: block;
+                width: 157px;
+                font-size: 9px;
+                line-height: 11px;
+                margin-top: 2px;
+                vertical-align: unset;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.services__icons__item-05, .services__icons__item-06 {
+    margin-bottom: 39;
+    @include phones {
+        margin-bottom: 0;
+    }
+}
+
+.advantages {
+    background: url('../img/services/services-bg.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding-top: 47px;
+    padding-bottom: 23px;
+    @include phones {
+        padding-bottom: 0;
+    }
+    &-section {
+        @include phones {
+            display: none;
+        }
+    }
+    &__container {
+        width: 100%;
+    }
+    &__content {
+        margin-top: 12px;
+        padding-left: 67px;
+        @include phones {
+            padding-left: 20px;
+        }
+    }
+    &__item {
+        &-1, &-2 {
+            margin-bottom: 7px;
+            @include phones {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__title {
+        text-align: center;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        color: #000000;
+        line-height: 21px;
+        @include phones {
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+    &__icon {
+        display: inline;
+        margin-right: 14px;
+        width: 100%;
+        height: 100%;
+        vertical-align: top;
+        @include phones {
+            margin-right: 3px;
+        }
+    }
+    &__pic {
+        width: 14px;
+        height: 12px;
+        @include phones {
+            width: 10px;
+            height: 9px;
+        }
+    }
+    &__desc {
+        display: inline-block;
+        max-width: 450px;
+        @include phones {
+            max-width: 320px;
+        }
+    }
+    &__subtitle {
+        display: inline-block;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        color: #000000;
+        text-transform: uppercase;
+        @include phones {
+            font-size: 10px;
+            line-height: 12px;
+        }
+    }
+    &__text {
+        display: inline;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: #7B7B7B;
+        @include phones {
+            font-size: 9px;
+            line-height: 11px;
+        }
+    }
+}
+
+.order {
+    padding-top: 22px;
+    @include phones {
+        padding-top: 20px;
+    }
+    &__text {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: justify;
+        color: #7B7B7B;
+        @include phones {
+            font-size: 9px;
+            line-height: 11px;
+        }
+        strong {
+            color: #000000;
+        }
+    }
+    &__buttons {
+        margin-top: 30px;
+    }
+    &__btn {
+        width: 270px;
+        height: 50px;
+        display: inline-block;
+        @include phones {
+            width: 157px;
+        }
+
+        &-email, &-text, &-phone {
+            font-family: Roboto;
+            font-style: normal;
+            color: #000000;
+            text-align: center;
+        }
+
+        &-email {
+            background-color: #C4C4C4;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            text-transform: uppercase;
+            padding-top: 16px;
+            @include phones {
+                font-size: 11px;
+                line-height: 13px;
+                padding-top: 18px;
+            }
+        }
+        &-call {
+            background-color: #F2F2F2;
+            float: right;
+            padding-top: 4px;
+        }
+        &-text {
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 14px;
+            @include phones {
+                font-size: 11px;
+                line-height: 13px;
+            }
+        }
+        &-phone {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 14px;
+            margin-top: 10px;
+            @include phones {
+                font-size: 12px;
+                line-height: 14px;
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+.consult {
+    margin-top: 20px;
+    padding-bottom: 26px;
+    &__item {
+        &-3, &-4, &-6 {
+            margin-bottom: 5px;
+        }
+    }
+    @include phones {
+        margin-top: 23px;
+        padding-bottom: 18px;
+    }
+    &__title, &__text {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+        @include phones {
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+    &__title {
+        margin-bottom: 15px;
+    }
+    &__list {
+        padding-left: 25px;
+        margin-bottom: 15px;
+    }
+    &__icon {
+        display: inline-block;
+        color: #A4A4A4;
+        vertical-align: top;
+        &-item {
+            &-big {
+            line-height: 10px;
+            }
+        }
+    }
+    &__desc {
+        display: inline-block;
+        max-width: 440px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+        color: #A4A4A4;
+        @include phones {
+            font-size: 10px;
+            line-height: 12px;
+            max-width: 295px;
+        }
+    }
+}
+
+.footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #1F1F1F;
+    &__logo, &__times, &__designed, &__btn {
+        vertical-align: middle;
+    }
+    &__logo {
+        margin-right: 10px;
+        @include phones {
+            margin-right: 15px;
+        }
+        &-img {
+            @include phones {
+                width: 102px;
+                height: 34px;
+            }
+        }
+    }
+    &__times {
+        display: inline-block;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 13px;
+        color: #999999;
+        margin-right: 15px;
+        @include phones {
+            font-size: 10px;
+            line-height: 13px;
+            margin-right: 14px;
+        }
+    }
+    &__designed {
+        display: inline-block;
+        margin-right: 10px;
+        @include phones {
+            display: none;
+        }
+    }
+    &__btn {
+        display: inline-block;
+        font-size: 12px;
+        @include phones {
+            font-size: 10px;
+            line-height: 12px;
+            width: 78px;
+            text-align: center;
+            padding: 10px;
+        }
+    }
+}
