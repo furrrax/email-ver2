@@ -17,10 +17,7 @@
         float: right;
         margin-top: 7px;
         @include phones {
-            border: unset;
-            background-color: #ffffff;
-            color: #000000;
-            font-size: 10px;
+            font-size: 10px !important;
         }
     }
     &__title {
@@ -73,7 +70,7 @@
             display: inline-block;
             width: 74%;
             @include phones {
-                width: 57%;
+                width: 57% !important;
             }
         }
 
@@ -87,8 +84,8 @@
                 font-size: 18px;
                 line-height: 21px;
                 @include phones {
-                    font-size: 14px;
-                    line-height: 16px;
+                    font-size: 14px !important;
+                    line-height: 16px !important;
                 }
             }
             &-separator {
@@ -97,7 +94,7 @@
                 border-top: 2px solid #000000;
                 vertical-align: middle;
                 @include phones {
-                    width: 72px;
+                    width: 72px !important;
                 }
             }
         }
@@ -114,8 +111,8 @@
                 text-align: justify;
                 color: #7B7B7B;
                 @include phones {
-                    font-size: 9px;
-                    line-height: 10px;
+                    font-size: 9px !important;
+                    line-height: 10px !important;
                 }
             }
             strong {
@@ -134,14 +131,14 @@
 .services {
     &__container {
         @include phones {
-            padding-bottom: 32px;
+            padding-bottom: 32px !important;
         }
     }
     &__title {
         text-align: center;
         margin-bottom: 48px;
         @include phones {
-            margin-bottom: 26px;
+            margin-bottom: 26px !important;
         }
         &__separator {
             display: inline-block;
@@ -149,7 +146,7 @@
             border-top: 2px solid #000000;
             vertical-align: middle;
             @include phones {
-                width: 86px;
+                width: 86px !important;
             }
         }
         &-text {
@@ -163,10 +160,10 @@
             text-transform: uppercase;
             color: #000000;
             @include phones {
-                font-size: 14px;
-                line-height: 16px;
-                margin-left: 25px;
-                margin-right: 25px;
+                font-size: 14px !important;
+                line-height: 16px !important;
+                margin-left: 25px !important;
+                margin-right: 25px !important;
             }
         }
     }
@@ -177,13 +174,13 @@
             display: inline-block;
             margin-bottom: 46px;
             @include phones {
-                margin-bottom: 28px;
-                vertical-align: top;
+                margin-bottom: 28px !important;
+                vertical-align: top !important;
             }
             &-01, &-03, &-05 {
                 margin-right: 10px;
                 @include phones {
-                    margin-right: 13px;
+                    margin-right: 13px !important;
                 }
             }
         }
@@ -193,9 +190,9 @@
             height: 58px;
             margin-right: 5px;
             @include phones {
-                width: 43px;
-                height: 42px;
-                margin-right: unset;
+                width: 43px !important;
+                height: 42px !important;
+                margin-right: 0 !important;
             }
         }
 
@@ -215,13 +212,13 @@
                 margin-top: 12px;
             }
             @include phones {
-                display: block;
-                width: 157px;
-                font-size: 9px;
-                line-height: 11px;
-                margin-top: 2px;
-                vertical-align: unset;
-                text-align: center;
+                display: block !important;
+                width: 157px !important;
+                font-size: 9px !important;
+                line-height: 11px !important;
+                margin-top: 2px !important;
+                vertical-align: unset !important;
+                text-align: center !important;
             }
         }
     }
@@ -230,7 +227,7 @@
 .services__icons__item-05, .services__icons__item-06 {
     margin-bottom: 39;
     @include phones {
-        margin-bottom: 0;
+        margin-bottom: 0 !important;
     }
 }
 
@@ -241,11 +238,11 @@
     padding-top: 47px;
     padding-bottom: 23px;
     @include phones {
-        padding-bottom: 0;
+        padding-bottom: 0 !important;
     }
     &-section {
         @include phones {
-            display: none;
+            display: none !important;
         }
     }
     &__container {
@@ -255,14 +252,14 @@
         margin-top: 12px;
         padding-left: 67px;
         @include phones {
-            padding-left: 20px;
+            padding-left: 20px !important;
         }
     }
     &__item {
         &-1, &-2 {
             margin-bottom: 7px;
             @include phones {
-                margin-bottom: 0;
+                margin-bottom: 0 !important;
             }
         }
     }
@@ -275,8 +272,8 @@
         color: #000000;
         line-height: 21px;
         @include phones {
-            font-size: 14px;
-            line-height: 16px;
+            font-size: 14px !important;
+            line-height: 16px !important;
         }
     }
     &__icon {
@@ -286,22 +283,22 @@
         height: 100%;
         vertical-align: top;
         @include phones {
-            margin-right: 3px;
+            margin-right: 3px !important;
         }
     }
     &__pic {
         width: 14px;
         height: 12px;
         @include phones {
-            width: 10px;
-            height: 9px;
+            width: 10px !important;
+            height: 9px !important;
         }
     }
     &__desc {
         display: inline-block;
         max-width: 450px;
         @include phones {
-            max-width: 320px;
+            max-width: 320px !important;
         }
     }
     &__subtitle {
@@ -314,8 +311,8 @@
         color: #000000;
         text-transform: uppercase;
         @include phones {
-            font-size: 10px;
-            line-height: 12px;
+            font-size: 10px !important;
+            line-height: 12px !important;
         }
     }
     &__text {
@@ -327,8 +324,8 @@
         line-height: 14px;
         color: #7B7B7B;
         @include phones {
-            font-size: 9px;
-            line-height: 11px;
+            font-size: 9px !important;
+            line-height: 11px !important;
         }
     }
 }
@@ -336,7 +333,7 @@
 .order {
     padding-top: 22px;
     @include phones {
-        padding-top: 20px;
+        padding-top: 20px !important;
     }
     &__text {
         font-family: Roboto;
@@ -347,8 +344,8 @@
         text-align: justify;
         color: #7B7B7B;
         @include phones {
-            font-size: 9px;
-            line-height: 11px;
+            font-size: 9px !important;
+            line-height: 11px !important;
         }
         strong {
             color: #000000;
@@ -362,7 +359,7 @@
         height: 50px;
         display: inline-block;
         @include phones {
-            width: 157px;
+            width: 157px !important;
         }
 
         &-email, &-text, &-phone {
@@ -380,9 +377,9 @@
             text-transform: uppercase;
             padding-top: 16px;
             @include phones {
-                font-size: 11px;
-                line-height: 13px;
-                padding-top: 18px;
+                font-size: 11px !important;
+                line-height: 13px !important;
+                padding-top: 18px !important;
             }
         }
         &-call {
@@ -395,8 +392,8 @@
             font-size: 12px;
             line-height: 14px;
             @include phones {
-                font-size: 11px;
-                line-height: 13px;
+                font-size: 11px !important;
+                line-height: 13px !important;
             }
         }
         &-phone {
@@ -405,9 +402,9 @@
             line-height: 14px;
             margin-top: 10px;
             @include phones {
-                font-size: 12px;
-                line-height: 14px;
-                margin-top: 0;
+                font-size: 12px !important;
+                line-height: 14px !important;
+                margin-top: 0 !important;
             }
         }
     }
@@ -422,8 +419,8 @@
         }
     }
     @include phones {
-        margin-top: 23px;
-        padding-bottom: 18px;
+        margin-top: 23px !important;
+        padding-bottom: 18px !important;
     }
     &__title, &__text {
         font-family: Roboto;
@@ -433,8 +430,8 @@
         line-height: 21px;
         color: #000000;
         @include phones {
-            font-size: 14px;
-            line-height: 16px;
+            font-size: 14px !important;
+            line-height: 16px !important;
         }
     }
     &__title {
@@ -464,9 +461,9 @@
         line-height: 14px;
         color: #A4A4A4;
         @include phones {
-            font-size: 10px;
-            line-height: 12px;
-            max-width: 295px;
+            font-size: 10px !important;
+            line-height: 12px !important;
+            max-width: 295px !important;
         }
     }
 }
@@ -481,12 +478,12 @@
     &__logo {
         margin-right: 10px;
         @include phones {
-            margin-right: 15px;
+            margin-right: 15px !important;
         }
         &-img {
             @include phones {
-                width: 102px;
-                height: 34px;
+                width: 102px !important;
+                height: 34px !important;
             }
         }
     }
@@ -500,27 +497,27 @@
         color: #999999;
         margin-right: 15px;
         @include phones {
-            font-size: 10px;
-            line-height: 13px;
-            margin-right: 14px;
+            font-size: 10px !important;
+            line-height: 13px !important;
+            margin-right: 14px !important;
         }
     }
     &__designed {
         display: inline-block;
         margin-right: 10px;
         @include phones {
-            display: none;
+            display: none !important;
         }
     }
     &__btn {
         display: inline-block;
         font-size: 12px;
         @include phones {
-            font-size: 10px;
-            line-height: 12px;
-            width: 78px;
-            text-align: center;
-            padding: 10px;
+            font-size: 10px !important;
+            line-height: 12px !important;
+            width: 78px !important;
+            text-align: center !important;
+            padding: 10px !important;
         }
     }
 }
